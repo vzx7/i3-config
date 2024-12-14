@@ -15,6 +15,7 @@ Everything is very simple! Very simple configuration. Nothing extra.
 - **i3-nagbar** - displays an error bar on top of your screen
 - **i3-config-wizard** - creates a keysym based config based on your layout
 - **nm-applet** - network monitor and control GUI applet
+- **xkblayout-state** - is a small command-line program to get/set the current XKB keyboard layout (AUR).
 
 ## My base soft
 ```sh 

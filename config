@@ -169,7 +169,8 @@ bar {
 		urgent_workspace	#2F343A	#900000	#FFFFFF
 		binding_mode		#2F343A	#900000	#FFFFFF
 	}
-	status_command i3status
+    #the script "add-lang-layout-i3status" should be located in the $PATH directories
+	status_command exec add-lang-layout-i3status
 }
 
 bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10' -p 'dmenu promt >'"

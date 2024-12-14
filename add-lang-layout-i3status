@@ -1,0 +1,17 @@
+#!/bin/sh
+# This script uses the command "xkblayout-state" to read the current layout and place it in the bar status.
+
+lang=""
+
+update_lang() {
+  lang=$(xkblayout-state print "%s")
+}
+
+i3status | (read line && echo "$line" && read line && echo "$line" && read line && echo "$line" && update_lang && while :
+
+do
+  read line
+  update_lang
+  echo ",[{\"full_text\":\"${lang}\" },${line#,\[}" || exit 1
+done)
+
